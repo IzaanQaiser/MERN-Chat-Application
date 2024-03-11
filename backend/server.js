@@ -11,17 +11,20 @@ app.get("/", (req, res) => {
     res.send("Hello World, today!");
 });
 
-// 3 Authentication routes
-app.get("/api/auth/signup", (req, res) => {
-    console.log("signup route");
-});
+// Doing all the separate authentication routes is messy and will get cluttered so we will condense them into categories sorted by their root directory
+app.use("/api/auth", authRoutes)
 
-app.get("/api/auth/login", (req, res) => {
-    console.log("login route");
-});
+// // 3 Authentication routes
+// app.get("/api/auth/signup", (req, res) => {
+//     console.log("signup route");
+// });
 
-app.get("/api/auth/logout", (req, res) => {
-    console.log("logout route");
-});
+// app.get("/api/auth/login", (req, res) => {
+//     console.log("login route");
+// });
+
+// app.get("/api/auth/logout", (req, res) => {
+//     console.log("logout route");
+// });
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
