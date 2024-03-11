@@ -4,7 +4,7 @@
   "description": "This is a project where I make MERN Full-Stack Online Chatting application using JavaScript Sockets",
   "main": "server.js",
   "scripts": {
-    "server": "node backend/server.js"
+    "server": "nodemon backend/server.js"
   },
   "keywords": [],
   "author": "",
