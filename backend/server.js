@@ -11,6 +11,17 @@ app.get("/", (req, res) => {
     res.send("Hello World, today!");
 });
 
-app.get("/api/auth/signup")
+// 3 Authentication routes
+app.get("/api/auth/signup", (req, res) => {
+    console.log("signup route");
+});
+
+app.get("/api/auth/login", (req, res) => {
+    console.log("login route");
+});
+
+app.get("/api/auth/logout", (req, res) => {
+    console.log("logout route");
+});
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
