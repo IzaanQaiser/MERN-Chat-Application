@@ -13,7 +13,7 @@ app.get("/", (req, res) => {
 });
 
 // Doing all the separate authentication routes is messy and will get cluttered so we will condense them into categories sorted by their root directory
-app.use("/api/auth", authRoutes)
+app.use("/api/auth", authRoutes) // Auth routes are called from the auth routes file whenever this path is followed
 
 // // 3 Authentication routes
 // app.get("/api/auth/signup", (req, res) => {
