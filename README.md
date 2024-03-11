@@ -1,0 +1,1 @@
+This is a project where I make MERN Full-Stack Online Chatting application using JavaScript Sockets
