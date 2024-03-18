@@ -34,14 +34,19 @@ export const signup = async (req, res) => {
       profilePic: gender == "male" ? boyProfilePic : girlProfilePic,
     });
 
-    await newUser.save();
+    if (newUser) {
+      // Generate GWT Token
+      await newUser.save();
 
-    res.status(201).json({
-      _id: newUser._id,
-      fullName: newUser.fullName,
-      username: newUser.username,
-      profilePic: newUser.profilePic,
-    });
+      res.status(201).json({
+        _id: newUser._id,
+        fullName: newUser.fullName,
+        username: newUser.username,
+        profilePic: newUser.profilePic,
+      });
+    } else {
+      res.status(400).json({ error: "Invalid user data" });
+    }
   } catch (error) {
     console.log("Error in signup controller", error.message);
     res.status(500).json({ error: "Internal Server Error" });
