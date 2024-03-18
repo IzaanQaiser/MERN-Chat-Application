@@ -1,5 +1,5 @@
+import bcrypt from "bcryptjs";
 import User from "../models/user.model.js";
-import bcryptjs from "bcryptjs";
 
 export const signup = async (req, res) => {
   try {
@@ -16,6 +16,9 @@ export const signup = async (req, res) => {
     }
 
     // HASHING THE PASSWORD
+
+    const salt = await bcrypt.genSalt(10); //The higher the number the faster, but also slower
+
 
     //Profile Picture API: https://avatar-placeholder.iran.liara.run/
 
