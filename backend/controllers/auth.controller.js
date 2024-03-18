@@ -55,7 +55,7 @@ export const signup = async (req, res) => {
   }
 };
 
-export const login = (req, res) => {
+export const login = async (req, res) => {
   console.log("loginUser");
 };
 
