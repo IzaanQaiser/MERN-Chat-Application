@@ -19,6 +19,7 @@ export const signup = async (req, res) => {
 
     const salt = await bcrypt.genSalt(10); //The higher the number the faster, but also slower
 
+    const hashedPassword = await bcrypt.hash(password, salt);
 
     //Profile Picture API: https://avatar-placeholder.iran.liara.run/
 
@@ -28,7 +29,7 @@ export const signup = async (req, res) => {
     const newUser = new User({
       fullName,
       username,
-      password,
+      password: hashedPassword,
       gender,
       profilePic: gender == "male" ? boyProfilePic : girlProfilePic,
     });
