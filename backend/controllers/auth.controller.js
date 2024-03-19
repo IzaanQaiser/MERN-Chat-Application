@@ -56,7 +56,14 @@ export const signup = async (req, res) => {
 };
 
 export const login = async (req, res) => {
-  console.log("loginUser");
+  try {
+    const { username, password } = req.body;
+    const user = await User.findOne({ username });
+    const isPasswordCorrect = await bcrypt.compare(password, user.password);
+  } catch (error) {
+    console.log("Error in login controller", error.message);
+    res.status(500).json({ error: "Internal Server Error" });
+  }
 };
 
 export const logout = (req, res) => {
