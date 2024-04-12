@@ -3,7 +3,7 @@ import React from "react";
 const Conversation = () => {
   return (
     <>
-      <div className="flex gap-2 items-center hover:bg-green-500 rounded p-2 py-1 cursor-pointer">
+      <div className="flex gap-2 items-center hover:bg-gray-700 rounded-full p-2 py-1 cursor-pointer">
         <div className="avatar online">
           <div className="w-12 rounded-full">
             <img
@@ -19,7 +19,7 @@ const Conversation = () => {
           </div>
         </div>
       </div>
-      <div className=" my-0 py-1 h-5" />
+      <div className="my-0 py-1 h-4" />
     </>
   );
 };
