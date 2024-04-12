@@ -11,7 +11,7 @@ const SignUp = () => {
 
         <form>
           <div>
-            <label className="label p-2">
+            <label className="label p-2 mt-4">
               <span className="text-base label-text">Full Name</span>
             </label>
             <input
@@ -22,7 +22,7 @@ const SignUp = () => {
           </div>
 
           <div>
-            <label className="label p-2">
+            <label className="label p-2 mt-1">
               <span className="text-base label-text">Username</span>
             </label>
             <input
@@ -33,7 +33,7 @@ const SignUp = () => {
           </div>
 
           <div>
-            <label className="label">
+            <label className="label mt-1">
               <span className="text-base label-text">Password</span>
             </label>
             <input
@@ -44,7 +44,7 @@ const SignUp = () => {
           </div>
 
           <div>
-            <label className="label">
+            <label className="label mt-1">
               <span className="text-base label-text">Confrim Password</span>
             </label>
             <input type="text" placeholder="Confirm your password" className="w-full input input-bordered h-10"/>
@@ -52,7 +52,7 @@ const SignUp = () => {
 
           <GenderCheckbox/>
 
-          <a className='text-sm hover:text-gray-600 mt-2 inline-block'
+          <a className='text-sm hover:text-gray-600 mt-1 inline-block'
 						href='#'> Already have an acount?</a>
 
             <div>
