@@ -27,7 +27,7 @@ const Login = () => {
             <input type="text" placeholder="Enter your password" className="w-full input input-bordered h-10"/>
           </div>
 
-          <a href="#" className="text-sm hover:underline hover:text-blue-600 mt-2 inline-block">
+          <a href="#" className="text-sm hover:text-gray-600 mt-2 inline-block">
             {"Don't"} have an account?
           </a>
 
