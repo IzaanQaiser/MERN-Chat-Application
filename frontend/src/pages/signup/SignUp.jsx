@@ -74,7 +74,7 @@ const SignUp = () => {
               <span className="text-base label-text">Password</span>
             </label>
             <input
-              type="text"
+              type="password"
               placeholder="Enter your password"
               className="w-full input input-bordered h-10"
               value={inputs.password}
@@ -90,7 +90,7 @@ const SignUp = () => {
               <span className="text-base label-text">Confrim Password</span>
             </label>
             <input
-              type="text"
+              type="password"
               placeholder="Confirm your password"
               className="w-full input input-bordered h-10"
               value={inputs.confirmPassword}
