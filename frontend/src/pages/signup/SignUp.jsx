@@ -1,8 +1,8 @@
-import React from "react";
 import GenderCheckbox from "./GenderCheckbox";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
+// Good - start
 const SignUp = () => {
   const [inputs, setInputs] = useState({
     fullName: "",
@@ -11,15 +11,17 @@ const SignUp = () => {
     confirmPassword: "",
     gender: "",
   });
+  
 
   const handleCheckboxChange = (gender) => {
     setInputs({ ...inputs, gender });
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    await signup(inputs);
+  const handleSubmit = (e) => {
+    e.preventDefault() ;
   };
+
+  // Good - end
 
   return (
     <div className="flex flex-col items-center justify-center min-w-96 mx-auto">
@@ -29,6 +31,8 @@ const SignUp = () => {
         </h1>
 
         <form onSubmit={handleSubmit}>
+          
+          {/* Full name */}
           <div>
             <label className="label p-2 mt-4">
               <span className="text-base label-text">Full Name</span>
@@ -44,6 +48,7 @@ const SignUp = () => {
             />
           </div>
 
+          {/* Username */}
           <div>
             <label className="label p-2 mt-1">
               <span className="text-base label-text">Username</span>
@@ -59,6 +64,7 @@ const SignUp = () => {
             />
           </div>
 
+          {/* Password */}
           <div>
             <label className="label mt-1">
               <span className="text-base label-text">Password</span>
@@ -74,6 +80,7 @@ const SignUp = () => {
             />
           </div>
 
+          {/* Confirm Password */}
           <div>
             <label className="label mt-1">
               <span className="text-base label-text">Confrim Password</span>
@@ -89,6 +96,7 @@ const SignUp = () => {
             />
           </div>
 
+          {/* Gender */}
           <GenderCheckbox
             onCheckboxChange={handleCheckboxChange}
             selectedGender={inputs.gender}
