@@ -5,7 +5,7 @@ const Conversations = () => {
   const { loading, conversations } = useGetConversations();
   console.log("CONVERSATIONS: ", conversations)
   return (
-    <div className='py-2 overflow-y-scroll'>
+    <div className='py-2 pr-2 overflow-auto'>
 
     {conversations.map((conversation, idx) =>(
       <Conversation 

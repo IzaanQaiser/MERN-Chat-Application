@@ -6,7 +6,7 @@ const LogoutButton = () => {
     <>
       {!loading ? (
         <div
-          className="btn btn-wide hover:bg-green-600 text-white rounded-full"
+          className="btn btn-wide hover:bg-green-600 text-white rounded-full mt-2"
           onClick={logout}
         >
           Logout
