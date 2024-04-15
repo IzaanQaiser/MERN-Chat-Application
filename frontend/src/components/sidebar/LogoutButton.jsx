@@ -1,11 +1,21 @@
-import React from 'react'
+import useLogout from "../../hooks/useLogout";
 
 const LogoutButton = () => {
+  const { loading, logout } = useLogout();
   return (
-    <div className='btn btn-wide hover:bg-green-600 text-white rounded-full'>
-      Logout
-    </div>
-  )
-}
+    <>
+      {!loading ? (
+        <div
+          className="btn btn-wide hover:bg-green-600 text-white rounded-full"
+          onClick={logout}
+        >
+          Logout
+        </div>
+      ) : (
+        <span className="loading loading-spinner"></span>
+      )}
+    </>
+  );
+};
 
-export default LogoutButton
+export default LogoutButton;
