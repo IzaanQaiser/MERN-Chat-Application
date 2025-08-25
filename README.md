@@ -19,3 +19,5 @@ Technologies Used:
 
 Conclusion:
 This full-stack chat application showcases the capabilities of the MERN stack in building real-time communication platforms. By following the provided instructions, users can deploy the application locally or customize it further to suit their specific requirements.
+
+Need to do: add documentation and proof that this was actually made (images, videos, demos)
