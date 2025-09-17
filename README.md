@@ -43,6 +43,7 @@ graph TB
     end
     
     subgraph Backend["Backend (Node.js + Express)"]
+
         F[Express Server] --> G[Socket.io Server]
         G --> H[Authentication Middleware]
         H --> I[Route Controllers]
