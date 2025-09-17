@@ -367,12 +367,12 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 ## 🤝 **Contact**
 
-**Built with ❤️ by [Your Name]**
+**Built with ❤️ by Izaan Qaiser**
 
-- [Email](mailto:your.email@example.com)
-- [LinkedIn](https://www.linkedin.com/in/yourprofile/)
-- [GitHub](https://github.com/yourusername)
-- [Portfolio](https://yourportfolio.com)
+- [Email](mailto:iqvention@gmail.com)
+- [LinkedIn](https://www.linkedin.com/in/izaanq/)
+- [Website](https://izaanqaiser.github.io/personal-website/)
+- [GitHub](https://github.com/IzaanQaiser)
 
 ---
 
