@@ -42,7 +42,7 @@ graph TB
         D --> E[API Calls]
     end
     
-    subgraph Backend["Backend (Node.js + Express)"]
+    subgraph Backend["Backend (Node, Express)"]
 
         F[Express Server] --> G[Socket.io Server]
         G --> H[Authentication Middleware]
