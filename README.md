@@ -35,21 +35,21 @@ ChatApp is a full-stack real-time messaging application that demonstrates modern
 
 ```mermaid
 graph TB
-    subgraph "Frontend (React + Vite)"
+    subgraph Frontend["Frontend (React + Vite)"]
         A[React Components] --> B[Context API]
         B --> C[Zustand Store]
         C --> D[Socket.io Client]
         D --> E[API Calls]
     end
     
-    subgraph "Backend (Node.js + Express)"
+    subgraph Backend["Backend (Node.js + Express)"]
         F[Express Server] --> G[Socket.io Server]
         G --> H[Authentication Middleware]
         H --> I[Route Controllers]
         I --> J[MongoDB Models]
     end
     
-    subgraph "Database (MongoDB)"
+    subgraph Database["Database (MongoDB)"]
         K[Users Collection]
         L[Messages Collection]
         M[Conversations Collection]
